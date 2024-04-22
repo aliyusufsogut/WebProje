@@ -2,24 +2,30 @@
 <html>
 <head>
     <meta name="viewport" contnet="with=device-width, initial-scale=1.0">
-    <title>University Website Design</title>
+    <title>Fullstack Ödev Websitesi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
               <ul>
-                <li><a href="">Anasayfa</a></li> 
-                <li><a href="">Kurslarım</a> </li> 
-                <li><a href="">Hakkımızda</a></li>
-                <li><a href="">İletişim</a></li>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="kurslarım.html">Kurslarımız</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="login.html">Giriş Yap</a></li>
               </ul>  
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 <div class="text-box">
     <h1>Lorem ipsum</h1>
@@ -28,7 +34,128 @@
     <a href="" class="hero-btn">Daha Fazlası için Bizi Ziyaret Edin</a>
 </div>
 
-    </section>
+</section>
+
+<!-- Kurslar -->
+
+<section class="course">
+    <h1>Lorem ipsum</h1>
+    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Başlangıç</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec nec turpis ullamcorper, suscipit erat non, maximus erat. 
+                Fusce ac mollis nisl. Vivamus aliquet lacus sit amet purus tincidunt tincidunt.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Başlangıç</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec nec turpis ullamcorper, suscipit erat non, maximus erat. 
+                Fusce ac mollis nisl. Vivamus aliquet lacus sit amet purus tincidunt tincidunt.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Başlangıç</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec nec turpis ullamcorper, suscipit erat non, maximus erat. 
+                Fusce ac mollis nisl. Vivamus aliquet lacus sit amet purus tincidunt tincidunt.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-----campus-->
+
+<section class="campus">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="images/london.png">
+                    <div class="layer">
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                </div>
+            <div class="campus-col">
+                <img src="images/newyork.png">
+                <div class="layer">
+                    <h3>Lorem ipsum</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png">
+                <div class="layer">
+                    <h3>Lorem ipsum</h3>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<!-- Facilities -->
+
+<section class="facilities">
+    <h1>Our facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+            <img src="images/library.png">
+            <h3> Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+            <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3> Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 University Website Design</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1234567890</p>
+                <p>Address: 123 Street, City, Country</p>
+            </div>
+        </div>
+    </footer>
     
+
+</section>
+
+
+    
+<!-- sağ menü için js -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
 </body>
 </html>

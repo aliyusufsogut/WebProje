@@ -282,3 +282,35 @@ footer {
 .footer-info p {
     margin: 5px 0;
 }
+
+.course {
+    justify-content: space-between;
+    align-items: center;
+    height: 100 px;
+    width: 500px;
+    margin: 50px 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-info {
+    flex: 1;
+}
+
+.course-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.course-info p {
+    color: #666;
+}
+
+.course-image img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
